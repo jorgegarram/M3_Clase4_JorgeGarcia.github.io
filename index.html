@@ -1,12 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final</title>
+
+    <link rel="shortcut icon" href="images/icons/favicon.png" type="image/x-icon">
+
+    <!--Referencias de Bootstrap-->
+    <link rel="stylesheet" href="dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <script src="dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Proyecto Final</h1>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="images/icons/favicon.png" alt="Logotipo" width="30">
+                    MiPortafolio
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MenuContenido"
+                    aria-controls="MenuContenido" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="MenuContenido">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Proyectos">Mis Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="mb-5">
+            <div id="Banner" >
+                <div class="container pt-5 pb-5" >
+                    <h1>Jorge Garcia</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quo totam id aperiam ut sunt tempora
+                        officiis libero eaque unde labore, voluptates illum sequi explicabo est at iusto inventore deserunt.
+                    </p>
+                    <button class="btn btn-primary">Registrarme</button>
+                    <button class="btn btn-success">Saber más...</button>
+                </div>
+            </div>
+        </div>
+        <section id="Proyectos" class="mb-5">
+            <div class="container">
+                <h2>Proyectos</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita blanditiis non, nihil cupiditate
+                    vitae, aliquid tempore ea id accusantium a sint, recusandae at quaerat? Tempora rem porro iusto
+                    saepe possimus?</p>
+                <div class="row">
+                    <div class="col">
+                        <div class="card mb-3">
+                            <img class="card-img-top" 
+                                src="/images/img01_sm.jpg"
+                                srcset="/images/img01_sm.jpg 480w,/images/img01_md.jpg 800w" 
+                                alt="Diseño web">
+                            <div class="card-body">
+                                <h5>Diseño Web</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3">
+                            <img class="card-img-top" 
+                                src="/images/img02_sm.jpg"
+                                srcset="/images/img02_sm.jpg 480w,/images/img02_md.jpg 800w" alt="Base de datos">
+                            <div class="card-body">
+                                <h5>Base de datos</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3">
+                            <img class="card-img-top" src="/images/img03_sm.jpg"
+                                srcset="/images/img03_sm.jpg 480w,/images/img03_md.jpg 800w" alt="Aplicaciones móviles">
+                            <div class="card-body">
+                                <h5>Aplicaciones Móviles</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3">
+                            <img class="card-img-top" src="/images/img04_sm.jpg"
+                                srcset="/images/img04_sm.jpg 480w,/images/img04_md.jpg 800w" alt="Servicios">
+                            <div class="card-body">
+                                <h5>Servicios</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Productos" class="mb-5">
+            <div class="container">
+                <h2>Productos</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quis eligendi perferendis quisquam, dolorem in et exercitationem sint magni ab ut quasi aliquam optio provident? Et repellendus sint vitae in?</p>
+                <div class="row">
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-airplane-engines" viewBox="0 0 16 16">
+                            <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0ZM7 3c0-.432.11-.979.322-1.401C7.542 1.159 7.787 1 8 1c.213 0 .458.158.678.599C8.889 2.02 9 2.569 9 3v4a.5.5 0 0 0 .276.447l5.448 2.724a.5.5 0 0 1 .276.447v.792l-5.418-.903a.5.5 0 0 0-.575.41l-.5 3a.5.5 0 0 0 .14.437l.646.646H6.707l.647-.646a.5.5 0 0 0 .14-.436l-.5-3a.5.5 0 0 0-.576-.411L1 11.41v-.792a.5.5 0 0 1 .276-.447l5.448-2.724A.5.5 0 0 0 7 7V3Z"/>
+                        </svg>
+                        <h5>Exective</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio id, labore laudantium ullam nesciunt ipsum! Aliquam pariatur, cumque maiores vitae nesciunt iusto minima eveniet, facere labore beatae ea provident quaerat.</p>
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+                            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+                        </svg>
+                        <h5> Alliance</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio id, labore laudantium ullam nesciunt ipsum! Aliquam pariatur, cumque maiores vitae nesciunt iusto minima eveniet, facere labore beatae ea provident quaerat.</p>
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
+                            <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022ZM6 8.694 1 10.36V15h5V8.694ZM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15Z"/>
+                            <path d="M2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-2 2h1v1H2v-1Zm2 0h1v1H4v-1Zm4-4h1v1H8V9Zm2 0h1v1h-1V9Zm-2 2h1v1H8v-1Zm2 0h1v1h-1v-1Zm2-2h1v1h-1V9Zm0 2h1v1h-1v-1ZM8 7h1v1H8V7Zm2 0h1v1h-1V7Zm2 0h1v1h-1V7ZM8 5h1v1H8V5Zm2 0h1v1h-1V5Zm2 0h1v1h-1V5Zm0-2h1v1h-1V3Z"/>
+                          </svg>
+                        <h5>Company</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio id, labore laudantium ullam nesciunt ipsum! Aliquam pariatur, cumque maiores vitae nesciunt iusto minima eveniet, facere labore beatae ea provident quaerat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Contacto" class="mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Contacto</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis dolorem veritatis ipsam veniam necessitatibus, ratione distinctio quaerat, delectus, et suscipit sunt fuga facere cum consectetur beatae fugiat repellat quod laborum?</p>
+                    </div>
+                    <div class="col">
+                        <form action="">
+                            <label for="contacto_email">Escribe tu correo</label>
+                            <input type="email" id="contacto_email" class="form-control form-control-sm" placeholder="name@domain.com">
+                            <label for="contacto_message">Escriber tu comentarios</label>
+                            <textarea name="contacto_message" id="contacto_message" class="form-control form-control-sm"></textarea>
+                            <input type="submit" value="Enviar" class="btn btn-success mt-4">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            &copy; 2023 | Jorge Adán García Ramos | Educación Continua - FIME
+        </div>
+    </footer>
 </body>
+
 </html>
